@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 30px 20px;
+  background-color: palevioletred;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header > div {
+  flex-basis: 140px;
+}
+/* ↓この塊は↑に入れられる */
+.header-item {
+  height: 70px;
+  margin: 0 10px;
+  background-color: white;
+}
+
+header > :first-child {
+  margin-right: auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-item1 {
+  width: 300px;
+  background-color: yellowgreen;
+}
+
+main > .main-item2 {
+  flex-basis: 700px;
+}
+
+.main-item2 {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: green;
+}
+
+.main-item2 > .main-item-blok {
+  flex-basis: 200px;
+}
+
+.main-item-blok {
+  margin: 10px;
+  height: 130px;
+  background-color: yellow;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer > .footer-item {
+  flex-basis: 45%;
+}
+
+.footer-item {
+  height: 40px;
+  margin: 10px;
+  background-color: skyblue;
+}
